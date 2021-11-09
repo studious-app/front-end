@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studious</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico" />
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600&display=swap" rel="stylesheet">
+<link rel='stylesheet' href='index.css'>
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+<script src="https://kit.fontawesome.com/ab4339cff3.js" crossorigin="anonymous"></script>
+
+</head>
+ 
+<body>
+    <div class="pop" id="message-pop">
+        <p id="message-pop-text"></p>
+    </div>
+    <div class="container p-0">
+ 
+        <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0 clickable" id="title-tag">bear2bear</a>
+            
+            <ul class="navbar-nav px-3">
+                <li class="nav-item text-nowrap">
+                    <button class="search-bar form-control form-control-dark w-100 clickable" id="create-button">Create Room</button>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav px-3">
+                <li>
+                    <button class="search-bar form-control form-control-dark w-100 clickable" id="join-button">Join Room</button>
+                </li>
+            </ul>
+            
+            <input id="search-bar" class="form-control form-control-dark w-100 search-bar" type="text" placeholder="Search..." aria-label="Search">
+            
+            
+           
+            
+        </nav>
+ 
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="col-md-2 d-none d-md-block sidebar">
+                    <div class="sidebar-sticky">
+                        <ul class="nav" id="video-grid">
+                            
+                        </ul>
+                        <div id = "voice-chat" class="hidden video-chat">
+                            <i class="fas fa-microphone-slash clickable" id="microphone-icon"></i>
+                            <i class="fas fa-video-slash clickable" id="camera-icon"></i>
+                            <i class="fas fa-desktop clickable" id="share-icon"></i>
+                        </div>
+
+                    </div>
+                </nav>
+ 
+                <main id="drop-zone" role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4 movie_list">
+                   
+ 
+                        <div class="row">
+                            <div id="md-player">
+                                
+                            </div>  
+                            <div id = "media-container">
+
+                               
+                            </div>
+                        
+                        </div>
+ 
+                </main>
+            </div>
+        </div>
+ 
+    </div>
+ 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
