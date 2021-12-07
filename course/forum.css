@@ -1,0 +1,37 @@
+.forum-post{
+    padding: 10px 30px 30px 30px;
+    width: 140vh;
+    background-color: #13191d;
+    color: whitesmoke;
+    border-radius: 0.25rem;
+    margin-bottom: 20px;
+}
+
+.form-name{
+    font-size: large;
+}
+
+.form-main-text{
+    margin-bottom: 40px;
+}
+
+.form-date{
+    margin-left: 10px;
+    font-size: small;
+    color: antiquewhite;
+}
+
+.form-comment{
+    background-color:#282828;
+    padding: 10px 20px 20px 20px;
+    box-shadow: 0px 0px 35px -16px rgba(70, 70, 70, 0.75);
+    margin-left: 60px;
+    margin-top: 20px;
+    border-radius: .25rem;
+}
+
+.add-reply{
+    margin-top: 20px;
+    margin-left: 60px;
+    width: 95.5% !important;
+}
