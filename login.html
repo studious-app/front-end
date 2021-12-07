@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Login.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <!-- Tabs Titles -->
+          <h2 class="active clickable" id="change-student"> Student </h2>
+          <h2 class="inactive underlineHover clickable" id="change-professor"> Professor </h2>
+      
+          <!-- Login Form -->
+          <form id="student-login">
+            <input type="text" id="email" class="fadeIn second" name="email" placeholder="Email" autocomplete="off">
+            <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password">
+            <input type="submit" class="fadeIn fourth" value="Log In">
+          </form>
+
+          <form id="professor-login" class="hidden">
+            <input type="text" id="user" class="fadeIn second" name="username" placeholder="Username" autocomplete="off">
+            <input type="password" id="password-prof" class="fadeIn third" name="password" placeholder="Password">
+            <input type="submit" class="fadeIn fourth" value="Log In">
+          </form>
+      
+        </div>
+      </div>
+</body>
+<script src="login.js"></script>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studious</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico" />
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600&display=swap" rel="stylesheet">
+<link rel='stylesheet' href='main.css'>
+<link rel='stylesheet' href='calendar.css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+<script src="https://kit.fontawesome.com/ab4339cff3.js" crossorigin="anonymous"></script>
+<script src="courses.js"></script>
+
+</head>
+ 
+<body>
+    <div class="pop" id="message-pop">
+        <p id="message-pop-text"></p>
+    </div>
+    <div class="container p-0">
+ 
+        <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0 clickable" id="title-tag">Studious</a>
+            <select class="select-course" id="select-courses">
+                <option value="1">My Courses</option>
+                <option value="2">All Courses</option>
+            </select>
+            <input id="search-bar" class="form-control form-control-dark w-100 search-bar" type="text" placeholder="Search..." aria-label="Search">
+            <ul class="navbar-nav px-3">
+                <li>
+                    <button class="search-bar form-control form-control-dark w-100 clickable" id="logout">Log Out</button>
+                </li>
+            </ul>
+        </nav>
+ 
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="col-md-2 d-none d-md-block sidebar">
+                    <div class="sidebar-sticky">
+                        <div class="container">
+                          <div class="calendar dark">
+                              <div class="calendar_header">
+                                <h1 class = "header_title">Today's Schedule</h1>
+                              </div>
+                              <div class="calendar_events" id="calendar_events">
+                                
+                              </div>
+                            </div>
+                          
+                          </div>
+                    </div>
+                </nav>
+ 
+                <main id="drop-zone" role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4 movie_list">
+ 
+                        <div class="row">
+                            <div id = "media-container1">
+                                
+                            </div>  
+                        </div>
+                        <div class="row">
+                            <div id = "media-container2" class="hidden">
+                                
+                            </div>  
+                        </div>
+                </main>
+            </div>
+        </div>
+ 
+    </div>
+ 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studious</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico" />
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600&display=swap" rel="stylesheet">
+<link rel='stylesheet' href='main.css'>
+<link rel='stylesheet' href='calendar.css'>
+<link rel='stylesheet' href='forum.css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+<script src="https://kit.fontawesome.com/ab4339cff3.js" crossorigin="anonymous"></script>
+
+</head>
+ 
+<body>
+    <div class="pop" id="message-pop">
+        <p id="message-pop-text"></p>
+    </div>
+    <div class="container p-0">
+ 
+        <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0 clickable" id="title-tag">Studious</a>
+            <ul class="navbar-nav px-3">
+                <li>
+                    <button class="search-bar form-control form-control-dark w-100 clickable" id="join-button">Join Call</button>
+                </li>
+            </ul>
+            <input id="search-bar" class="form-control form-control-dark w-100 search-bar" type="text" placeholder="Search..." aria-label="Search">
+            <ul class="navbar-nav px-3">
+                <li>
+                    <button class="search-bar form-control form-control-dark w-100 clickable" id="join-button">Log Out</button>
+                </li>
+            </ul>
+        </nav>
+ 
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="col-md-2 d-none d-md-block sidebar">
+                    <div class="sidebar-sticky">
+                        <div class="container">
+                          <div class="calendar dark">
+                              <div class="calendar_header">
+                                <h1 class = "header_title">FMSE</h1>
+                              </div>
+                              <div class="calendar_events">
+                                <p class="ce_title">Homeworks</p>
+                                <div class="event_item">
+                                  <div class="ei_Dot ei_Green"></div>
+                                  <div class="ei_Title">Tema 1</div>
+                                  <div class="ei_Copy">Tue 25 Nov 20:00</div>
+                                </div>
+                                <div class="event_item">
+                                    <div class="ei_Dot ei_Red"></div>
+                                    <div class="ei_Title">Tema 2</div>
+                                    <div class="ei_Copy">Mon 31 Nov 20:00</div>
+                                </div>
+                                <div class="event_item">
+                                    <div class="ei_Dot ei_White"></div>
+                                    <div class="ei_Title">Tema 3</div>
+                                    <div class="ei_Copy">Wen 15 Dec 12:00</div>
+                                </div>
+                                <div class="event_item">
+                                    <div class="ei_Dot ei_White"></div>
+                                    <div class="ei_Title">Tema 4</div>
+                                    <div class="ei_Copy">Fri 19 Jan 18:00</div>
+                                  </div>
+                              </div>
+                            </div>
+                          
+                          </div>
+                    </div>
+                </nav>
+ 
+                <main id="drop-zone" role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4 movie_list">
+ 
+                        <div class="row">
+                            <div id = "media-container">
+                                <div class="forum-post">
+                                    <p class="form-name">Dorel Lucanu <span class="form-date">18:39 25 Nov</span></p>
+                                    <p class="form-text form-main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eligendi eos deleniti dolorum reiciendis, dolor vero ipsa cum ab ea, fuga unde quaerat quam sapiente nam aperiam saepe doloremque quasi atque totam hic tempore! Fugiat alias dignissimos ut, hic neque dolore ipsam eveniet dicta voluptatibus corrupti assumenda quasi maiores voluptatum velit blanditiis quas harum quo molestiae est pariatur! Rem dolore repellendus, repudiandae nemo alias soluta dolorem molestiae temporibus, quos exercitationem atque possimus delectus ducimus voluptas illum dicta vitae officiis! Culpa, quo numquam ducimus quidem sed accusantium assumenda. Quidem architecto, officiis iusto voluptatem atque unde, nesciunt aspernatur earum quas mollitia obcaecati.</p>
+                                    
+                                    <div class="form-comment">
+                                        <p class="form-name">Mihai Craciun <span class="form-date">18:51 25 Nov</span></p>
+                                        <p class="form-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, quos sequi nemo quisquam voluptatum illo ea amet excepturi et aperiam unde, eos voluptas aut maxime ipsum doloribus corrupti ex corporis.</p>
+                                    </div>
+
+                                    <div class="form-comment">
+                                        <p class="form-name">Catalin Ionita <span class="form-date">18:51 25 Nov</span></p>
+                                        <p class="form-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, quos sequi nemo quisquam voluptatum illo ea amet excepturi et aperiam unde, eos voluptas aut maxime ipsum doloribus corrupti ex corporis.</p>
+                                    </div>
+
+                                    <input class="form-control form-control-dark w-100 search-bar add-reply" type="text" placeholder="Reply..." aria-label="Search">
+
+                                </div>
+
+                                <div class="forum-post">
+                                    <p class="form-name">Dorel Lucanu <span class="form-date">18:39 25 Nov</span></p>
+                                    <p class="form-text form-main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eligendi eos deleniti dolorum reiciendis, dolor vero ipsa cum ab ea, fuga unde quaerat quam sapiente nam aperiam saepe doloremque quasi atque totam hic tempore! Fugiat alias dignissimos ut, hic neque dolore ipsam eveniet dicta voluptatibus corrupti assumenda quasi maiores voluptatum velit blanditiis quas harum quo molestiae est pariatur! Rem dolore repellendus, repudiandae nemo alias soluta dolorem molestiae temporibus, quos exercitationem atque possimus delectus ducimus voluptas illum dicta vitae officiis! Culpa, quo numquam ducimus quidem sed accusantium assumenda. Quidem architecto, officiis iusto voluptatem atque unde, nesciunt aspernatur earum quas mollitia obcaecati.</p>
+                                    
+                                    <div class="form-comment">
+                                        <p class="form-name">Mihai Craciun <span class="form-date">18:51 25 Nov</span></p>
+                                        <p class="form-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, quos sequi nemo quisquam voluptatum illo ea amet excepturi et aperiam unde, eos voluptas aut maxime ipsum doloribus corrupti ex corporis.</p>
+                                    </div>
+
+                                    <div class="form-comment">
+                                        <p class="form-name">Mihai Craciun <span class="form-date">18:51 25 Nov</span></p>
+                                        <p class="form-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, quos sequi nemo quisquam voluptatum illo ea amet excepturi et aperiam unde, eos voluptas aut maxime ipsum doloribus corrupti ex corporis.</p>
+                                    </div>
+                                </div>
+                                <br/>
+                            </div>  
+                        </div>
+                </main>
+            </div>
+        </div>
+ 
+    </div>
+ 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>
