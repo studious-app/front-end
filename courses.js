@@ -6,7 +6,7 @@ if(localStorage.getItem("token") == null){
 }
 $(document).ready(()=>{
     $("#logout").click(function() {
-        localStorage.removeItem("token");
+        //localStorage.removeItem("token");
         window.location.href = "/login"; 
     });
 })
@@ -35,7 +35,7 @@ $.ajax
                 },
                 error: function (XMLHttpRequest, textStatus, errorThrown){
                     if(XMLHttpRequest.status == 401){
-                        localStorage.removeItem("token");
+                        //localStorage.removeItem("token");
                     }
                 }
             });
