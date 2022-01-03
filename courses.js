@@ -5,9 +5,8 @@ if(localStorage.getItem("token") == null){
     window.location.href = "/login"; 
 }
 $(document).ready(()=>{
-    console.log("ceva");
     $("#logout").click(function() {
-        localStorage.removeItem("token");
+        //localStorage.removeItem("token");
         window.location.href = "/login"; 
     });
 })
@@ -36,7 +35,7 @@ $.ajax
                 },
                 error: function (XMLHttpRequest, textStatus, errorThrown){
                     if(XMLHttpRequest.status == 401){
-                        localStorage.removeItem("token");
+                        //localStorage.removeItem("token");
                     }
                 }
             });
@@ -67,7 +66,7 @@ function populateCourses(courses){
                 $.ajax
                 ({
                     type: "POST",
-                    url: 'https://studious-backend-services.herokuapp.com/students/enroll',
+                    url: 'https://studious-backend-services.herokuapp.com/users/enroll',
                     contentType: 'application/json',
                     data: JSON.stringify({
                         classRoomId: course._id

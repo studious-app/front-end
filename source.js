@@ -8,12 +8,9 @@ var sharePeer;
 
 $(document).ready(function(){
     let url = window.location.href;
-    if(url.split("?").length > 1){
-        temp = url.split("?")[1];
-        if(temp.split("=").length > 1){
-            room = temp.split("=")[1];
-            socket.emit("check-room", room);
-        }
+    if(url.split("/").length > 1){
+        temp = url.split("/")[1];
+        joinRoom(temp, "join");
     }
 })
 
@@ -100,8 +97,6 @@ $('#join-button').on("click", function(e) {
 
 function joinRoom(room, type){
     //changing the URL to contain the room number 
-    window.history.pushState("ceva", "Title", `?room=${room}`);
-
     //create the new localstream
     createNewLocalStreamAndJoinRoom(cameraOn, microphoneOn, room, type);
 
