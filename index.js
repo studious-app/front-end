@@ -36,6 +36,14 @@ app.get('/course/:id', (req, res) => {
   res.sendFile(__dirname + '/course.html');
 });
 
+app.get('/homework/:id', (req, res) => {
+  res.sendFile(__dirname + '/homework.html');
+});
+
+app.get('/submissions/:id', (req, res) => {
+  res.sendFile(__dirname + '/submissions.html');
+});
+
 app.get('/admin', (req, res) => {
   res.sendFile(__dirname + '/admin.html');
 });

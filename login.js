@@ -54,7 +54,7 @@ $( "#student-login" ).submit(function( event ){
     $.ajax
     ({
         type: "POST",
-        url: 'https://studious-backend-services.herokuapp.com/auth/login',
+        url: 'http://34.241.224.108:3000/auth/login',
         contentType: 'application/json',
         data: JSON.stringify(credentials),
         success: function (data) {

@@ -17,8 +17,12 @@ $(document).ready(function(){
 socket.on("connect", () => {
   // or with emit() and custom event names
   socket.emit("request_media");
-  myPeer =  new Peer(id = socket.id);
-  sharePeer = new Peer(id = makeid(8));
+  myPeer =  new Peer(id = socket.id, {
+    secure:true,
+    host: 'studious-peer-server.herokuapp.com', // change here the herokuapp name
+    port: 443
+  });
+  
 });
 
 socket.on("room-valid", roomId =>{

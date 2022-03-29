@@ -1,7 +1,14 @@
+$(document).ready(()=>{
+    $("#logout").click(function() {
+        localStorage.removeItem("token");
+        window.location.href = "/login"; 
+    });
+})
+
 $.ajax
     ({
         type: "GET",
-        url: 'https://studious-backend-services.herokuapp.com/students',
+        url: 'http://34.241.224.108:3000/students',
         contentType: 'application/json',
         beforeSend: function (xhr) {
             xhr.setRequestHeader('Authorization', `Bearer ${localStorage.getItem("token")}`);
@@ -22,7 +29,7 @@ function populateStudentTable(students){
             $.ajax
             ({
                 type: "DELETE",
-                url: `https://studious-backend-services.herokuapp.com/users/${student._id}`,
+                url: `http://34.241.224.108:3000/users/${student._id}`,
                 contentType: 'application/json',
                 beforeSend: function (xhr) {
                     xhr.setRequestHeader('Authorization', `Bearer ${localStorage.getItem("token")}`);
@@ -50,7 +57,7 @@ function populateStudentTable(students){
             $.ajax
             ({
                 type: "PATCH",
-                url: `https://studious-backend-services.herokuapp.com/users/${student._id}`,
+                url: `http://34.241.224.108:3000/users/${student._id}`,
                 contentType: 'application/json',
                 data: JSON.stringify(updatedStudent),
                 beforeSend: function (xhr) {
@@ -118,7 +125,7 @@ function populateProfessorsTable(professors){
             $.ajax
             ({
                 type: "DELETE",
-                url: `https://studious-backend-services.herokuapp.com/professor/${professor._id}`,
+                url: `http://34.241.224.108:3000/professor/${professor._id}`,
                 contentType: 'application/json',
                 beforeSend: function (xhr) {
                     xhr.setRequestHeader('Authorization', `Bearer ${localStorage.getItem("token-admin")}`);
@@ -149,7 +156,7 @@ function populateProfessorsTable(professors){
             $.ajax
             ({
                 type: "PUT",
-                url: `https://studious-backend-services.herokuapp.com/professor/${professor._id}`,
+                url: `http://34.241.224.108:3000/professor/${professor._id}`,
                 contentType: 'application/json',
                 data: JSON.stringify(updatedProfessor),
                 beforeSend: function (xhr) {
@@ -258,7 +265,7 @@ function exportStudents(students){
     $.ajax
     ({
         type: "POST",
-        url: 'https://studious-backend-services.herokuapp.com/users/bulk',
+        url: 'http://34.241.224.108:3000/users/bulk',
         contentType: 'application/json',
         data: JSON.stringify(students),
         beforeSend: function (xhr) {
@@ -319,7 +326,7 @@ $("#add-prof").click(function(){
 //     $.ajax
 //     ({
 //         type: "POST",
-//         url: 'https://studious-backend-services.herokuapp.com/professor/list',
+//         url: 'http://34.241.224.108:3000/professor/list',
 //         contentType: 'application/json',
 //         data: JSON.stringify(profs),
 //         beforeSend: function (xhr) {

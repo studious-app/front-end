@@ -31,7 +31,7 @@
             <input id="search-bar" class="form-control form-control-dark w-100 search-bar" type="text" placeholder="Search..." aria-label="Search">
             <ul class="navbar-nav px-3">
                 <li>
-                    <button class="search-bar form-control form-control-dark w-100 clickable" id="join-button">Log Out</button>
+                    <button class="search-bar form-control form-control-dark w-100 clickable" id="logout">Log Out</button>
                 </li>
             </ul>
         </nav>
@@ -43,30 +43,11 @@
                         <div class="container">
                           <div class="calendar dark">
                               <div class="calendar_header">
-                                <h1 class = "header_title">FMSE</h1>
+                                <h1 class = "header_title" id="course_title"></h1>
                               </div>
-                              <div class="calendar_events">
+                              <div class="calendar_events" id="homeworks">
                                 <p class="ce_title">Homeworks</p>
-                                <div class="event_item">
-                                  <div class="ei_Dot ei_Green"></div>
-                                  <div class="ei_Title">Tema 1</div>
-                                  <div class="ei_Copy">Tue 25 Nov 20:00</div>
-                                </div>
-                                <div class="event_item">
-                                    <div class="ei_Dot ei_Red"></div>
-                                    <div class="ei_Title">Tema 2</div>
-                                    <div class="ei_Copy">Mon 31 Nov 20:00</div>
-                                </div>
-                                <div class="event_item">
-                                    <div class="ei_Dot ei_White"></div>
-                                    <div class="ei_Title">Tema 3</div>
-                                    <div class="ei_Copy">Wen 15 Dec 12:00</div>
-                                </div>
-                                <div class="event_item">
-                                    <div class="ei_Dot ei_White"></div>
-                                    <div class="ei_Title">Tema 4</div>
-                                    <div class="ei_Copy">Fri 19 Jan 18:00</div>
-                                  </div>
+                                
                               </div>
                             </div>
                           
@@ -78,38 +59,7 @@
  
                         <div class="row">
                             <div id = "media-container">
-                                <div class="forum-post">
-                                    <p class="form-name">Dorel Lucanu <span class="form-date">18:39 25 Nov</span></p>
-                                    <p class="form-text form-main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eligendi eos deleniti dolorum reiciendis, dolor vero ipsa cum ab ea, fuga unde quaerat quam sapiente nam aperiam saepe doloremque quasi atque totam hic tempore! Fugiat alias dignissimos ut, hic neque dolore ipsam eveniet dicta voluptatibus corrupti assumenda quasi maiores voluptatum velit blanditiis quas harum quo molestiae est pariatur! Rem dolore repellendus, repudiandae nemo alias soluta dolorem molestiae temporibus, quos exercitationem atque possimus delectus ducimus voluptas illum dicta vitae officiis! Culpa, quo numquam ducimus quidem sed accusantium assumenda. Quidem architecto, officiis iusto voluptatem atque unde, nesciunt aspernatur earum quas mollitia obcaecati.</p>
-                                    
-                                    <div class="form-comment">
-                                        <p class="form-name">Mihai Craciun <span class="form-date">18:51 25 Nov</span></p>
-                                        <p class="form-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, quos sequi nemo quisquam voluptatum illo ea amet excepturi et aperiam unde, eos voluptas aut maxime ipsum doloribus corrupti ex corporis.</p>
-                                    </div>
-
-                                    <div class="form-comment">
-                                        <p class="form-name">Catalin Ionita <span class="form-date">18:51 25 Nov</span></p>
-                                        <p class="form-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, quos sequi nemo quisquam voluptatum illo ea amet excepturi et aperiam unde, eos voluptas aut maxime ipsum doloribus corrupti ex corporis.</p>
-                                    </div>
-
-                                    <input class="form-control form-control-dark w-100 search-bar add-reply" type="text" placeholder="Reply..." aria-label="Search">
-
-                                </div>
-
-                                <div class="forum-post">
-                                    <p class="form-name">Dorel Lucanu <span class="form-date">18:39 25 Nov</span></p>
-                                    <p class="form-text form-main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eligendi eos deleniti dolorum reiciendis, dolor vero ipsa cum ab ea, fuga unde quaerat quam sapiente nam aperiam saepe doloremque quasi atque totam hic tempore! Fugiat alias dignissimos ut, hic neque dolore ipsam eveniet dicta voluptatibus corrupti assumenda quasi maiores voluptatum velit blanditiis quas harum quo molestiae est pariatur! Rem dolore repellendus, repudiandae nemo alias soluta dolorem molestiae temporibus, quos exercitationem atque possimus delectus ducimus voluptas illum dicta vitae officiis! Culpa, quo numquam ducimus quidem sed accusantium assumenda. Quidem architecto, officiis iusto voluptatem atque unde, nesciunt aspernatur earum quas mollitia obcaecati.</p>
-                                    
-                                    <div class="form-comment">
-                                        <p class="form-name">Mihai Craciun <span class="form-date">18:51 25 Nov</span></p>
-                                        <p class="form-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, quos sequi nemo quisquam voluptatum illo ea amet excepturi et aperiam unde, eos voluptas aut maxime ipsum doloribus corrupti ex corporis.</p>
-                                    </div>
-
-                                    <div class="form-comment">
-                                        <p class="form-name">Mihai Craciun <span class="form-date">18:51 25 Nov</span></p>
-                                        <p class="form-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, quos sequi nemo quisquam voluptatum illo ea amet excepturi et aperiam unde, eos voluptas aut maxime ipsum doloribus corrupti ex corporis.</p>
-                                    </div>
-                                </div>
+                                
                                 <br/>
                             </div>  
                         </div>

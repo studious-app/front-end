@@ -1,0 +1,144 @@
+form{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+input{
+    display: none;
+}
+label{
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  color: #fff;
+  background: #282828;
+  border-radius: 50%;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#upload{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 50%;
+}
+.upload-homework-part{
+    border-radius: 10px;
+    margin: auto;
+    width: 80%;
+    /* border: 3px solid green; */
+    padding: 10px;
+    background: #13191D;
+
+}
+
+.rows {
+    margin-top: 10%;
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+.row{
+    display: flex;
+    flex-wrap: nowrap;
+    height: auto;
+    margin : 10px;
+    border: 5px dashed #282828;
+    padding: 20px;
+}
+
+#task-container{
+  width: 100%;
+  height: auto;
+  color: #fff;
+  background: #282828;
+  border-radius: 10px;
+  padding: 10px;
+
+}
+
+#task-image{
+  width: auto;
+  height: auto;
+  background: #13191D;
+  border-radius: 10px;
+  padding: 15px;
+  margin:20px;
+}
+
+#task-description{
+    width: auto;
+    height: auto;
+    background: #13191D;
+    border-radius: 10px;
+    padding: 15px;
+    margin:20px;
+}
+
+.send-task{
+    background: #13191D;
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    width:auto;
+}
+
+.send-task:hover{
+    background: #1663a0;
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    width:auto;
+}
+
+.get-task{
+    background: #13191D;
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    width:auto;
+}
+
+.get-task:hover{
+    background: #1663a0;
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    width:auto;
+}
+
+table{
+    color: whitesmoke;
+    font-size: x-large;
+    width: 100%;
+    text-align: center;
+}
+
+tr{
+    border-radius: .25em;
+    border: whitesmoke 1px solid;
+    margin: 15px;
+}
+
+#task-link{
+    width:auto;
+}
+#send-task-wrapper{
+    display: flex;
+    align-items: right;
+    justify-content: center;
+}
+
+.green{
+    background-color: green;
+}
+

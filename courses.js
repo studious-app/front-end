@@ -6,7 +6,7 @@ if(localStorage.getItem("token") == null){
 }
 $(document).ready(()=>{
     $("#logout").click(function() {
-        //localStorage.removeItem("token");
+        localStorage.removeItem("token");
         window.location.href = "/login"; 
     });
 })
@@ -15,7 +15,7 @@ $(document).ready(()=>{
 $.ajax
 ({
     type: "GET",
-    url: 'https://studious-backend-services.herokuapp.com/classrooms',
+    url: 'http://34.241.224.108:3000/classrooms',
     contentType: 'application/json',
     success: function (data) {
         courses = data;
@@ -23,7 +23,7 @@ $.ajax
         $.ajax
             ({
                 type: "GET",
-                url: 'https://studious-backend-services.herokuapp.com/students/profile',
+                url: 'http://34.241.224.108:3000/users/profile',
                 contentType: 'application/json',
                 beforeSend: function(request) {
                     request.setRequestHeader("Authorization", `Bearer ${localStorage.getItem("token")}`);
@@ -66,7 +66,7 @@ function populateCourses(courses){
                 $.ajax
                 ({
                     type: "POST",
-                    url: 'https://studious-backend-services.herokuapp.com/users/enroll',
+                    url: 'http://34.241.224.108:3000/users/enroll',
                     contentType: 'application/json',
                     data: JSON.stringify({
                         classRoomId: course._id
